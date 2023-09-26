@@ -14,12 +14,12 @@
 
 Bu proje, create-react-app (CRA) kullanılarak oluşturuldu. Bu projenin çalışması için CRA'yı kurmanız gerekmeyecek. Projeyi uygun bağımlılıklarla kurmak için aşağıdaki adımları izleyin.
 
-- [ ]  Projeyi forklayarak bir kopyasını oluşturun.
-- [ ]  Terminalden klonlayın
-- [ ]  Projenin ana dizinine gidin
-- [ ]  `npm install` komutuyla bağımlılıkları indirin (Tavsiye edilen NPM version: 18)
-- [ ]  `npm start` ile çalıştırın
-- [ ]  Push commits: git push origin `main`.
+- [X]  Projeyi forklayarak bir kopyasını oluşturun.
+- [X]  Terminalden klonlayın
+- [X]  Projenin ana dizinine gidin
+- [X]  `npm install` komutuyla bağımlılıkları indirin (Tavsiye edilen NPM version: 18)
+- [X]  `npm start` ile çalıştırın
+- [X]  Push commits: git push origin `main`.
 
 ### Görev 2a
 
@@ -30,11 +30,11 @@ component içinde tanımlanıp, hangi componente prop olarak aktarılmalı gibi 
 Lütfen diagramı okumaya başlamadan önce, diagramdaki nesnelerin ne anlama geldiğini ifade eden tabloyu (yine 
 diagram içinde sol tarafta) inceleyiniz.  
 
-- [ ]  Bu uygulama, bu proje için gereken iki ana bölüme ayrılabilir: Arama Çubuğu ve Gönderiler.
-- [ ]  Bu projeyi tamamlamak için, sayfanın üst kısmında oluşturulan Arama Çubuğunun tek bir örneğinin yanı sıra `sahte-veri.js` dizisindeki her nesne için ayrı bir gönderi oluşturan bir Gönderi bileşeni olacaktır.
-- [ ]  Gönderileri takip etmek ve stateleri belirlemek için dün öğrendiklerinizi kullanın.
-- [ ]  Gönderilerdeki "beğeni sayısını" artırmak için bir callback uygulayacak ve bunu birkaç seviyeden iç içe geçmiş bir bileşene aktaracaksınız.
-- [ ]  Başlamadan önce kodu gözden geçirin. Bir sürü dosya var. Hepsine kod eklenmesi gerekli değil. App.js dosyasında başlayın ve oradaki talimatları okuyun.
+- [X]  Bu uygulama, bu proje için gereken iki ana bölüme ayrılabilir: Arama Çubuğu ve Gönderiler.
+- [X]  Bu projeyi tamamlamak için, sayfanın üst kısmında oluşturulan Arama Çubuğunun tek bir örneğinin yanı sıra `sahte-veri.js` dizisindeki her nesne için ayrı bir gönderi oluşturan bir Gönderi bileşeni olacaktır.
+- [X]  Gönderileri takip etmek ve stateleri belirlemek için dün öğrendiklerinizi kullanın.
+- [X]  Gönderilerdeki "beğeni sayısını" artırmak için bir callback uygulayacak ve bunu birkaç seviyeden iç içe geçmiş bir bileşene aktaracaksınız.
+- [X]  Başlamadan önce kodu gözden geçirin. Bir sürü dosya var. Hepsine kod eklenmesi gerekli değil. App.js dosyasında başlayın ve oradaki talimatları okuyun.
 
 ---
 
