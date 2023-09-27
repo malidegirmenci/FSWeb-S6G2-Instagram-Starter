@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Gonderiler from "./bilesenler/Gonderiler/Gonderiler";
 import AramaCubugu from "./bilesenler/AramaCubugu/AramaCubugu";
 import sahteVeri from "./sahte-veri";
@@ -7,23 +7,19 @@ import "./App.css";
 
 const App = () => {
   // Arama çubuğunun çalışması için , arama kriterini tutacak başka bir state'e ihtiyacımız olacak.
+  const [originGonderiler,setOriginGonderiler] = useState([...sahteVeri]);
   const [gonderiler, setGonderiler] = useState(sahteVeri)
   const [aramaKriteri, setAramaKriteri] = useState("");
-  console.log(gonderiler);
+  console.log("originGonderiler:",originGonderiler)
+
   const gonderiyiBegen = (gonderiID) => {
-    const pureGonderiler = [...gonderiler.likes];
     setGonderiler(gonderiler.map((post) => {
-      const updatedGonderi = {...post}
-      if(updatedGonderi.likes !== post.likes){
-        return updatedGonderi
-      }else{
         if (gonderiID === post.id) {
-          updatedGonderi.likes += 1;
-          return updatedGonderi;
+          const updatedPost = { ...post, likes: post.likes + 1 };
+          return updatedPost;
         } else {
           return post;
         }
-      }
     }))
   };
 /*
@@ -38,9 +34,8 @@ const App = () => {
 
   return (
     <div className="App">
-      App Çalışıyor
       <AramaCubugu aramaKriteri={aramaKriteri} aramaHandler={aramaHandler}/>
-      <Gonderiler gonderiyiBegen={gonderiyiBegen} gonderiler={gonderiler} />
+      <Gonderiler gonderiyiBegen={gonderiyiBegen} gonderiler={gonderiler} originGonderiler={originGonderiler} />
     </div>
   );
 };
